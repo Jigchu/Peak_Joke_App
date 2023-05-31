@@ -111,7 +111,7 @@ struct ContentView: View {
             .padding()
         }
         .alert("Did you like the last joke?", isPresented: $show_alert) {
-            Button("Yes", role: .destructive) {
+            Button("YES", role: .destructive) {
                 show_sheet = true
                 liked = 1
             }
@@ -135,7 +135,7 @@ struct ContentView: View {
                 show_sheet = true
                 liked = 0.4
             }
-            Button("No", role: .destructive) {
+            Button("NO", role: .destructive) {
                 show_sheet = true
                 liked = 0
             }
